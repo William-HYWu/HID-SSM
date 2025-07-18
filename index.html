@@ -26,7 +26,6 @@
 
 
   <title>Holistic Surgical Phase Recognition with Hierarchical Input Dependent State Space Models</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -157,12 +156,26 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus.
-              Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a
-              vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac
-              gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed
-              vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-            </p>
+              Surgical workflow analysis is essential in robot-assisted surgeries, yet the long duration of such
+              procedures poses significant challenges for comprehensive video analysis.
+              Recent approaches have predominantly relied on transformer models; however, their quadratic attention
+              mechanism restricts efficient processing of lengthysurgical videos. In this paper, we propose a novel
+              hierarchical input-dependent state space model that leverages
+              the linear scaling property of state space models to enable decision making on full-length videos while
+              capturing both
+              local and global dynamics. Our framework incorporates a temporally consistent visual feature extractor,
+              which appends a state space model head to a visual feature extractor to propagate temporal information.
+              The proposed
+              model consists of two key modules: a local-aggregation state space model block that effectively captures
+              intricate
+              local dynamics, and a global-relation state space model block that models temporal dependencies across the
+              entire video. The model is trained using a hybrid discrete continuous supervision strategy, where both
+              signals of
+              discrete phase labels and continuous phase progresses are propagated through the network. Experiments have
+              shown
+              that our method outperforms the current state-of-the-art methods by a large margin (+2.8% on Cholec80,
+              +4.3% on MICCAI2016, and +12.9% on Heichole datasets). Code will be publically available after paper
+              acceptance.
           </div>
         </div>
       </div>
